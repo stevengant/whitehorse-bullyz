@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitehorse Bullyz</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <!--  -->
+    <div class="chrome" data-text="WHITEHORSE BULLYZ">WHITEHORSE BULLYZ</div>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <filter id="bevel">
+          <!-- filter stuff happening here -->
+          <feMorphology operator="dilate" radius="3" in="SourceGraphic" result="bevel" />
+        </filter>
+        <filter id="noise" x="0vw" y="0vh" width="100vw" height="100vh">
+          <feFlood flood-color="#808080" result="neutral-gray" />
+          <feTurbulence in="neutral-gray" type="fractalNoise" baseFrequency="0.8" numOctaves="10" stitchTiles="stitch"
+            result="noise" />
+          <feColorMatrix in="noise" type="saturate" values="0" result="destaturatedNoise"></feColorMatrix>
+          <feComponentTransfer in="desaturatedNoise" result="theNoise">
+            <feFuncA type="table" tableValues="0 0 0.2 0"></feFuncA>
+          </feComponentTransfer>
+          <feBlend in="SourceGraphic" in2="theNoise" mode="soft-light" result="noisy-image" />
+        </filter>
+
+      </defs>
+    </svg>
+    <ul>
+      <li><img src="img/insta-icon.png" alt="instagram"></li>
+      <li><img src="img/fb-icon.png" alt="facebook"></li>
+      <li><img src="img/mail-icon.png" alt="email"></li>
+    </ul>
+  </div>
+
+
+  <main>
+    <!-- <img src="img/Christmas-pup.jpg" alt=""> -->
+
+  </main>
+  <!-- <img src="img/whitehorse_mtn.jpg" alt=""> -->
+</body>
+
+</html>
