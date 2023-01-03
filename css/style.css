@@ -1,17 +1,18 @@
-html {
+body {
   background: url(../img/whitehorse_mtn.jpg) center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
 
 .centered{
   text-align:center;
-  margin-top:calc(50vh - 0.5em);
-  
 }
+
 .chrome{
+  justify-content: center;
   font-family: 'Kanit', sans-serif;
   font-size:8rem;
   font-weight:100;
@@ -30,6 +31,8 @@ html {
   filter:url(#bevel);
   background:linear-gradient(#ffffff 20%,#58bee4 30%, #204a68 50%,#62a7d1 70%, #ffffff 80%) 0% 0% repeat;
   -webkit-background-clip:text;
+
+  justify-content: center;
   position:absolute;
   z-index:-1;
   
@@ -37,6 +40,8 @@ html {
 
 .chrome:after{
   content:attr(data-text);
+
+  justify-content: center;
   position:absolute;
   text-shadow:0 0 25px rgba(255,255,255,0.5);
   transform:translate(-100%);
