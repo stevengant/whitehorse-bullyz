@@ -6,6 +6,10 @@ body {
   height: 100vh;
 }
 
+li {
+  list-style: none;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: transparent;
