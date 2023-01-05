@@ -61,14 +61,16 @@ body {
   float: left;
 }
 
-.quinn {
-  /* margin-top: 1vw; */
+#quinn {
+  display: flex;
+  position: relative;
   margin-left: 12vw;
 }
 
-.gambit {
+#gambit {
   display: flex;
-  justify-content: space-around;
+  position: relative;
+  margin-left: 8vw;
   margin-top: 7vw;
 }
 
