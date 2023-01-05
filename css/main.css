@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background-image: url(../img/whitehorse_mtn_color_resized2.jpg);
   overflow: hidden;
   background-size: cover;
   width: 100%;
@@ -57,27 +57,19 @@ body {
   padding-bottom: 5px;
 }
 
-.features {
-	margin: 4em auto;
-	padding: 1em;
-	position: relative;
-}
-.feature-title {
-	color: rgb(166, 205, 221);
-	font-size: 1.3rem;
-	font-weight: 700;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-}
-.features img {
-	-webkit-box-shadow: 1px 1px 4px rgba(242, 244, 243, 0.951);
-	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0);
-	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.024);
-	margin-bottom: 16px;
+.imgContainer{
+  float: left;
 }
 
-p {
-  color: rgb(166, 205, 221);
+.quinn {
+  /* margin-top: 1vw; */
+  margin-left: 12vw;
+}
+
+.gambit {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7vw;
 }
 
 .centered{
@@ -120,5 +112,3 @@ p {
   transform:translate(-100%);
   z-index:-2;
 }
-
-
